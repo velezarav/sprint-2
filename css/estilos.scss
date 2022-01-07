@@ -4,3 +4,25 @@ $secondary: #FA5959;
 
 // ------------------------------------
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+.bloque-derecha {
+    height: 24em;
+    width: 41em;
+    border-radius: 17em 0 0 17em;
+    margin-top: -21em;
+    margin-left: 10em;
+    z-index: -1;
+  }
+
+.image-bloque {
+    width: 50em;
+}
+
+.presentation {
+  h1 {
+    font-weight: 800;
+  }
+
+  padding: 7em;
+
+}
