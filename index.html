@@ -6,6 +6,7 @@
     <title>Bookmark | A simple bookmark manager</title>
     <link rel="shortcut icon" href="/sprint2/img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <style>
       body {
         font-family: 'Rubik', serif;
@@ -16,8 +17,9 @@
     </style>
 </head>
 <body>
-    <nav class="navbar mx-5 navbar-expand-md navbar-light align-items-baseline">
-        <div class="container-fluid">
+<!-- navbar -->
+    <nav class="navbar mx-auto navbar-expand-md navbar-light align-items-baseline">
+        <div class="container">
             <a href="#" class="navbar-brand ms-4"><img src="/sprint2/img/logo-bookmark.svg" alt="logo bookmark" width="160"></a>
             <button class="navbar-toggler border-0 py-2 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#menuList" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="/sprint2/img/icon-hamburger.svg" alt="logo desplegable">
@@ -34,13 +36,31 @@
                         <a href="#" class="navbar-link btn btn-sm text-muted font-weight-bold py-2 mx-3">CONTACT</a>
                     </li>
                     <li class="navbar-item my-4 mx-4">
-                        <a href="#" class="navbar-link btn btn-secondary btn-sm text-light px-4 font-weight-bold"><p class="m-2">LOGIN</p></a>
+                        <a href="#" class="navbar-link btn btn-secondary btn-sm text-light px-4 font-weight-bold shadow"><p class="m-2">LOGIN</p></a>
                     </li>
                 </ul>
             </div>
 
         </div>
     </nav>
-    
+<!-- section intro -->
+    <div class="container-fluid">
+        <div class="row flex-row-reverse ps-5 pt-5">
+            <div class="col-md-6 col-md-push-6 p-0">
+                <div class="image-bloque"><img src="/sprint2/img/illustration-hero.svg" alt=""></div>
+                <div class="bg-primary bloque-derecha" ></div>
+            </div>
+            <div class="col-12 col-md-6 col-md-pull-6 left-1 presentation">
+                <h1 class="display-3 font-weight-bolder">A Simple Bookmark Manager</h1>
+                <h5 class="text-black-50 mt-4">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</h5>
+                <button class="btn btn-primary px-4 py-2 me-2 mt-4 shadow">Get it on Chrome</button>
+                <button class="btn btn-light px-4 py-2 mt-4 text-black-75 shadow">Get it on Firefox</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
 </body>
 </html>

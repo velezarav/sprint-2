@@ -11956,4 +11956,25 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+.bloque-derecha {
+  height: 24em;
+  width: 41em;
+  border-radius: 17em 0 0 17em;
+  margin-top: -21em;
+  margin-left: 10em;
+  z-index: -1;
+}
+
+.image-bloque {
+  width: 50em;
+}
+
+.presentation {
+  padding: 7em;
+}
+
+.presentation h1, .presentation .h1 {
+  font-weight: 800;
+}
 /*# sourceMappingURL=estilos.css.map */
