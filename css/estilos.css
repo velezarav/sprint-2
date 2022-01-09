@@ -6194,8 +6194,8 @@ fieldset:disabled .btn {
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(82, 101, 225, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(82, 101, 225, 0.15);
   border-radius: 0.25rem;
 }
 
@@ -7712,8 +7712,8 @@ fieldset:disabled .btn {
 }
 
 .shadow {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(82, 101, 225, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(82, 101, 225, 0.15) !important;
 }
 
 .shadow-sm {
@@ -11966,6 +11966,14 @@ fieldset:disabled .btn {
   z-index: -1;
 }
 
+.bloque-izquierda {
+  height: 24em;
+  width: 45em;
+  border-radius: 0 17em 17em 0;
+  margin-top: -18em;
+  z-index: -1;
+}
+
 .image-bloque {
   width: 50em;
 }
@@ -11976,5 +11984,58 @@ fieldset:disabled .btn {
 
 .presentation h1, .presentation .h1 {
   font-weight: 800;
+}
+
+.tab-content img {
+  width: 35em;
+  margin-left: 14em;
+  margin-top: 3em;
+}
+
+.tab-content .features-text {
+  margin: 5em;
+}
+
+.nav-tabs a {
+  text-decoration: none;
+  color: gray;
+  padding: 1.5em 2.5em;
+  border-bottom: 0.1em solid #9b9b9b;
+}
+
+.nav-tabs .active > a {
+  border-bottom: 0.2em solid #FA5959;
+  color: #5e5d5d;
+}
+
+.cards .card {
+  width: 20rem;
+  border-radius: 1rem;
+  border-color: transparent;
+}
+
+.cards .card img {
+  width: 8rem;
+}
+
+.cards .card .linea-punteada {
+  width: 21rem;
+}
+
+.cards .card a {
+  width: 80%;
+}
+
+.cards div:nth-child(1) {
+  margin-bottom: 4rem;
+}
+
+.cards div:nth-child(2) {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cards div:nth-child(3) {
+  margin-top: 4rem;
 }
 /*# sourceMappingURL=estilos.css.map */

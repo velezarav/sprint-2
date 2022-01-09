@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="/sprint2/css/estilos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
     <title>Bookmark | A simple bookmark manager</title>
     <link rel="shortcut icon" href="/sprint2/img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
@@ -20,9 +20,9 @@
 <!-- navbar -->
     <nav class="navbar mx-auto navbar-expand-md navbar-light align-items-baseline">
         <div class="container">
-            <a href="#" class="navbar-brand ms-4"><img src="/sprint2/img/logo-bookmark.svg" alt="logo bookmark" width="160"></a>
+            <a href="#" class="navbar-brand ms-4"><img src="/img/logo-bookmark.svg" alt="logo bookmark" width="160"></a>
             <button class="navbar-toggler border-0 py-2 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#menuList" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="/sprint2/img/icon-hamburger.svg" alt="logo desplegable">
+                <img src="/img/icon-hamburger.svg" alt="logo desplegable">
             </button>
             <div class="collapse navbar-collapse justify-content-end pe-5" id="menuList">
                 <ul class="navbar-nav p-3 align-items-baseline">
@@ -33,7 +33,7 @@
                         <a href="#" class="navbar-link btn btn-sm text-muted font-weight-bold py-2 mx-3">PRICING</a>
                     </li>
                     <li class="navbar-item my-4">
-                        <a href="#" class="navbar-link btn btn-sm text-muted font-weight-bold py-2 mx-3">CONTACT</a>
+                        <a href="#" class="navbar-link btn btn-sm text-muted font-weight-bold py-2 mx-3">CONTACT0</a>
                     </li>
                     <li class="navbar-item my-4 mx-4">
                         <a href="#" class="navbar-link btn btn-secondary btn-sm text-light px-4 font-weight-bold shadow"><p class="m-2">LOGIN</p></a>
@@ -43,20 +43,125 @@
 
         </div>
     </nav>
-<!-- section intro -->
+<!-- seccion intro -->
     <div class="container-fluid">
         <div class="row flex-row-reverse ps-5 pt-5">
             <div class="col-md-6 col-md-push-6 p-0">
-                <div class="image-bloque"><img src="/sprint2/img/illustration-hero.svg" alt=""></div>
+                <div class="image-bloque"><img src="/img/illustration-hero.svg" alt=""></div>
                 <div class="bg-primary bloque-derecha" ></div>
             </div>
             <div class="col-12 col-md-6 col-md-pull-6 left-1 presentation">
-                <h1 class="display-3 font-weight-bolder">A Simple Bookmark Manager</h1>
-                <h5 class="text-black-50 mt-4">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</h5>
+                <h1 class="display-3 fw-bolder">A Simple Bookmark Manager</h1>
+                <h5 class="text-black-50 mt-4 lh-base">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</h5>
                 <button class="btn btn-primary px-4 py-2 me-2 mt-4 shadow">Get it on Chrome</button>
                 <button class="btn btn-light px-4 py-2 mt-4 text-black-75 shadow">Get it on Firefox</button>
             </div>
         </div>
+    </div>
+
+<!-- seccion features -->
+    <div class="container-fluid my-5 p-0">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-12 p-0 m-0">
+                <div class="col-4 text-content my-5 mx-auto">
+                <h3 class="fw-bolder">Features</h3>
+                <h5 class="text-black-50 my-3 lh-base">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</h5>
+                </div>
+                <ul class="nav nav-tabs justify-content-center border-0">
+                    <li class="nav-item active"><a href="#simple-bookmarking" data-toggle="tab">Simple Bookmarking</a></li>
+                    <li><a class="nav-item" href="#speedy-searching" data-toggle="tab">Speedy Searching</a></li>
+                    <li><a class="nav-item " href="#easy-sharing" data-toggle="tab">Easy Sharing</a></li>
+                </ul>
+                <div class="tab-content py-5" >
+                    <div class="tab-pane fade show active" id="simple-bookmarking" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="container-fluid p-0">
+                            <div class="row col-md-12 m-0">
+                                <div class="col-md-6 col-md-push-6 p-0">
+                                    <div class="image-bloque"><img src="/img/illustration-features-tab-1.svg" alt=""></div>
+                                    <div class="bg-primary bloque-izquierda" ></div>
+                                </div>
+                                <div class="col-12 col-md-4 col-md-pull-4 text-start features-text p-5 pe-0 justify-content-center">
+                                    <h3 class="fw-bolder">Bookmark in one click</h3>
+                                    <h5 class="text-black-50 my-4 lh-base me-5">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</h5>
+                                    <button class="btn btn-primary px-4 py-2 me-2 mt-2 shadow">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="speedy-searching" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="container-fluid p-0">
+                            <div class="row flex-row-reverse col-md-12 m-0">
+                                <div class="col-md-6 col-md-push-6 p-0">
+                                    <div class="image-bloque"><img src="/img/illustration-features-tab-2.svg" alt=""></div>
+                                    <div class="bg-primary bloque-derecha" ></div>
+                                </div>
+                                <div class="col-12 col-md-6 col-md-pull-6 presentation">
+                                    <h2 class="font-weight-bolder">Intelligent search</h2>
+                                    <h5 class="text-black-50 mt-4">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</h5>
+                                    <button class="btn btn-primary px-4 py-2 me-2 mt-4 shadow">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="easy-sharing" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="container-fluid p-0">
+                            <div class="row col-md-12 m-0">
+                                <div class="col-md-6 col-md-push-6 p-0">
+                                    <div class="image-bloque"><img src="/img/illustration-features-tab-3.svg" alt=""></div>
+                                    <div class="bg-primary bloque-izquierda" ></div>
+                                </div>
+                                <div class="col-12 col-md-6 col-md-pull-6 presentation">
+                                    <h2 class="font-weight-bolder">Share your bookmarks</h2>
+                                    <h5 class="text-black-50 mt-4">Easily share your bookmarks and collections with others. Create a shareable link taht you can send at the click of a button.</h5>
+                                    <button class="btn btn-primary px-4 py-2 me-2 mt-4 shadow">More info</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- seccion cards  -->
+    <div class="container mt-5">
+        <div class="row text-downloads">
+            <div class="col-6 text-content my-5 mx-auto text-center">
+                <h2 class="fw-bolder">Download the extension</h2>
+                <h5 class="text-black-50 my-3 lh-base">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</h5>
+            </div>
+        </div>
+        <div class="row cards justify-content-center">
+            <div class="card shadow text-center p-0 mx-3 h-auto">
+                <img src="/img/logo-chrome.svg" class="card-img-top m-auto my-5" alt="download Chrome extension">
+                <div class="card-body p-0 m-0">
+                <h5 class="card-title">Add to Chrome</h5>
+                <p class="card-text text-black-50 my-3 ">Minimum version 62</p>
+                <img src="/img/bg-dots.svg" class="w-100 m-0 linea-punteada" alt="linea divisora">
+                <a href="#" class="btn btn-primary my-3 py-3 mx-auto shadow">Add & Install Extension</a>
+                </div>
+            </div>
+            <div class="card shadow text-center p-0 mx-3">
+                <img src="/img/logo-firefox.svg" class="card-img-top m-auto my-5" alt="download Firefox extension">
+                <div class="card-body p-0 m-0">
+                <h5 class="card-title">Add to Firefox</h5>
+                <p class="card-text text-black-50 my-3 ">Minimum version 55</p>
+                <img src="/img/bg-dots.svg" class="w-100 m-0 linea-punteada" alt="linea divisora">
+                <a href="#" class="btn btn-primary my-3 py-3 mx-auto shadow">Add & Install Extension</a>
+                </div>
+            </div>
+            <div class="card shadow text-center p-0 mx-3">
+                <img src="/img/logo-opera.svg" class="card-img-top m-auto my-5" alt="download Opera extension">
+                <div class="card-body p-0 m-0">
+                <h5 class="card-title">Add to Opera</h5>
+                <p class="card-text text-black-50 my-3 ">Minimum version 46</p>
+                <img src="/img/bg-dots.svg" class="w-100 m-0 linea-punteada" alt="linea divisora">
+                <a href="#" class="btn btn-primary my-3 py-3 mx-auto shadow">Add & Install Extension</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 

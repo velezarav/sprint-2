@@ -1,5 +1,6 @@
 $primary: #5265E1;
 $secondary: #FA5959;
+$box-shadow: 0 .5rem 1rem rgba($primary, .15);
 
 
 // ------------------------------------
@@ -14,6 +15,14 @@ $secondary: #FA5959;
     z-index: -1;
   }
 
+.bloque-izquierda {
+  height: 24em;
+  width: 45em;
+  border-radius: 0 17em 17em 0;
+  margin-top: -18em;
+  z-index: -1;
+}
+
 .image-bloque {
     width: 50em;
 }
@@ -26,3 +35,64 @@ $secondary: #FA5959;
   padding: 7em;
 
 }
+
+.tab-content {
+  img {
+    width: 35em;
+    margin-left: 14em;
+    margin-top: 3em;
+  }
+
+  .features-text {
+    margin: 5em;
+  }
+}
+
+.nav-tabs {
+  a {
+    text-decoration: none;
+    color: gray;
+    padding: 1.5em 2.5em;
+    border-bottom:  0.1em solid rgb(155, 155, 155); 
+  }
+  .active > a {
+    border-bottom: 0.2em solid #FA5959; 
+    color: rgb(94, 93, 93);
+  }
+}
+
+
+.cards{
+  .card {
+    width: 20rem;
+    border-radius: 1rem;
+    border-color: transparent;
+
+    img {
+      width: 8rem;
+    }
+
+    .linea-punteada {
+      width: 21rem;
+    }
+
+    a {
+      width: 80%;
+    }
+  }
+
+  div:nth-child(1) {
+    margin-bottom: 4rem;
+  }
+
+  div:nth-child(2){
+    margin-top: 2rem;;
+    margin-bottom: 2rem;
+  }
+  div:nth-child(3){
+    margin-top: 4rem;;
+  }
+
+}
+
+
