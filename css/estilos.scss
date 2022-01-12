@@ -1,30 +1,49 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 $box-shadow: 0 .5rem 1rem rgba($primary, .15);
+$accordion-icon-color: $primary;
+$accordion-button-active-color: $secondary;
+$accordion-icon-width: 1.75rem;
+
+
 
 
 // ------------------------------------
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+body {
+  font-family: 'Rubik', serif;
+}
+.navbar {
+    letter-spacing: 2px;
+}
+
+.image-bloque {
+  width: 90%;
+}
+
+
 .bloque-derecha {
-    height: 24em;
-    width: 41em;
+    height: 20em;
+    width: 80%;
     border-radius: 17em 0 0 17em;
-    margin-top: -21em;
+    margin-top: -18em;
     margin-left: 10em;
+    margin-right: 0;
+    float: right;
+    position: relative;
     z-index: -1;
   }
 
 .bloque-izquierda {
-  height: 24em;
-  width: 45em;
+  height: 22em;
+  width: 75%;
   border-radius: 0 17em 17em 0;
-  margin-top: -18em;
+  margin-top: -14em;
+  margin-left: 0;
+  float: left;
+  position: relative;
   z-index: -1;
-}
-
-.image-bloque {
-    width: 50em;
 }
 
 .presentation {
@@ -32,32 +51,48 @@ $box-shadow: 0 .5rem 1rem rgba($primary, .15);
     font-weight: 800;
   }
 
-  padding: 7em;
+  padding: 10%;
 
 }
 
 .tab-content {
   img {
-    width: 35em;
-    margin-left: 14em;
+    width: 80%;
+    margin-left: 10%;
     margin-top: 3em;
   }
 
   .features-text {
-    margin: 5em;
+    margin: 5em 0;
+    position: relative;
   }
 }
 
 .nav-tabs {
-  a {
-    text-decoration: none;
-    color: gray;
-    padding: 1.5em 2.5em;
+  li {
+    padding: 1em 2.5em;
     border-bottom:  0.1em solid rgb(155, 155, 155); 
   }
-  .active > a {
+
+  a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    color: gray;
+    font-size: 1.3rem;
+  }
+  .active {
     border-bottom: 0.2em solid #FA5959; 
     color: rgb(94, 93, 93);
+    padding-bottom: 1.2em;
+  }
+}
+
+
+
+.flex-md-row {
+  li {
+    padding: 1.5em 0;
   }
 }
 
@@ -92,7 +127,27 @@ $box-shadow: 0 .5rem 1rem rgba($primary, .15);
   div:nth-child(3){
     margin-top: 4rem;;
   }
-
 }
 
+.accordion-faq {
+  a {
+    text-decoration: none;
+  }
+}
 
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: unset;
+}
+
+.accordion-button:hover {
+  color: $secondary;
+}
+
+.accordion-button {
+  font-weight: bold;
+}
