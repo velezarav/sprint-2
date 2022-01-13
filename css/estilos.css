@@ -11965,6 +11965,55 @@ body {
   letter-spacing: 2px;
 }
 
+.navbar-brand > img {
+  width: 11rem;
+}
+
+.navbar-toggler img {
+  width: 1.5rem;
+}
+
+.navbar-link {
+  color: gray;
+}
+
+.navbar-link:hover {
+  color: #FA5959;
+}
+
+.login {
+  background-color: #FA5959;
+  color: white;
+}
+
+.login:hover {
+  background-color: white;
+  border: solid #FA5959 1px;
+  color: #FA5959;
+}
+
+.btn-chrome {
+  background-color: #5265E1;
+  color: white;
+}
+
+.btn-chrome:hover {
+  background-color: white;
+  color: #5265E1;
+  border: solid 1px #5265E1;
+}
+
+.btn-firefox {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+.btn-firefox:hover {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+}
+
 .image-bloque {
   width: 90%;
 }
@@ -12024,6 +12073,10 @@ body {
   font-size: 1.3rem;
 }
 
+.nav-tabs a:hover {
+  color: #FA5959;
+}
+
 .nav-tabs .active {
   border-bottom: 0.2em solid #FA5959;
   color: #5e5d5d;
@@ -12050,6 +12103,14 @@ body {
 
 .cards .card a {
   width: 80%;
+  color: white;
+  background-color: #5265E1;
+}
+
+.cards .card a:hover {
+  color: #5265E1;
+  background-color: white;
+  border: solid 1px #5265E1;
 }
 
 .cards div:nth-child(1) {
@@ -12069,9 +12130,25 @@ body {
   text-decoration: none;
 }
 
+.accordion-button {
+  font-size: 1.25rem;
+}
+
+.accordion-body > p {
+  font-size: 1rem;
+}
+
 .accordion-button:not(.collapsed) {
   color: black;
   background-color: white;
+}
+
+.accordion-button.collapsed::after {
+  color: #5265E1;
+}
+
+.accordion-button:not(.collapsed)::after {
+  color: #FA5959;
 }
 
 .accordion-button:focus {
@@ -12083,7 +12160,36 @@ body {
   color: #FA5959;
 }
 
-.accordion-button {
-  font-weight: bold;
+.more-info {
+  width: 10rem;
+}
+
+.contacto p {
+  letter-spacing: 0.75rem;
+}
+
+.contacto .btn {
+  color: white;
+  background-color: #FA5959;
+}
+
+.contacto .btn:hover {
+  color: #FA5959;
+  background-color: white;
+  border: solid 1px #FA5959;
+}
+
+.invalid-feedback {
+  background-color: #FA5959;
+  color: white;
+}
+
+footer {
+  margin-top: 8rem;
+}
+
+.formulario-contacto {
+  display: inline-block;
+  position: relative;
 }
 /*# sourceMappingURL=estilos.css.map */

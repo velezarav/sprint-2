@@ -8,30 +8,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/path/to/dist/validator.min.js"></script>
 </head>
 <body>
 <!-- navbar -->
     <nav class="navbar mx-auto navbar-expand-md navbar-light align-items-baseline">
         <div class="container">
-            <a href="#" class="navbar-brand ms-4"><img src="/img/logo-bookmark.svg" alt="logo bookmark" width="160"></a>
+            <a href="#" class="navbar-brand ms-4"><img src="/img/logo-bookmark.svg" alt="logo bookmark"></a>
             <button class="navbar-toggler border-0 py-2 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#menuList" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="/img/icon-hamburger.svg" alt="logo desplegable">
             </button>
             <div class="collapse navbar-collapse justify-content-end pe-5" id="menuList">
                 <ul class="navbar-nav p-3 align-items-baseline">
                     <li class="navbar-item my-4">
-                        <a href="#features" class="navbar-link btn btn-sm text-muted font-weight-bold py-2 mx-3">FEATURES</a>
+                        <a href="#features" class="navbar-link btn btn-sm  font-weight-bold py-2 mx-3">FEATURES</a>
                     </li>
                     <li class="navbar-item my-4">
-                        <a href="#" class="navbar-link btn btn-sm text-muted font-weight-bold py-2 mx-3">PRICING</a>
+                        <a href="#" class="navbar-link btn btn-sm  font-weight-bold py-2 mx-3">PRICING</a>
                     </li>
                     <li class="navbar-item my-4">
-                        <a href="#" class="navbar-link btn btn-sm text-muted font-weight-bold py-2 mx-3">CONTACT0</a>
+                        <a href="#" class="navbar-link btn btn-sm  font-weight-bold py-2 mx-3">CONTACT0</a>
                     </li>
                     <li class="navbar-item my-4 mx-4">
-                        <a href="#" class="navbar-link btn btn-secondary btn-sm text-light px-4 font-weight-bold shadow"><p class="m-2">LOGIN</p></a>
+                        <a href="#" class="navbar-link login btn btn-sm px-4 py-2 font-weight-bold shadow">LOGIN</a>
                     </li>
                 </ul>
             </div>
@@ -48,8 +49,8 @@
             <div class="col-12 col-md-6 col-md-pull-6 presentation text-center text-md-start m-auto">
                 <h1 class="display-5 display-md-3 fw-bolder">A Simple Bookmark Manager</h1>
                 <h5 class="text-black-50 mt-4 lh-base">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</h5>
-                <button class="btn btn-primary px-4 py-3 me-2 mt-4 shadow">Get it on Chrome</button>
-                <button class="btn btn-light px-4 py-3 mt-4 text-black-75 shadow">Get it on Firefox</button>
+                <button class="btn-chrome btn  px-4 py-3 me-2 mt-4 shadow">Get it on Chrome</button>
+                <button class="btn-firefox btn px-4 py-3 mt-4 shadow">Get it on Firefox</button>
             </div>
         </div>
     </div>
@@ -66,7 +67,7 @@
                 <ul class="nav nav-tabs flex-column flex-md-row justify-content-center border-0">
                     <li><a class="active nav-item" href="#simple-bookmarking" data-toggle="tab">Simple Bookmarking</a></li>
                     <li><a class="nav-item" href="#speedy-searching" data-toggle="tab">Speedy Searching</a></li>
-                    <li><a class="nav-item " href="#easy-sharing" data-toggle="tab">Easy Sharing</a></li>
+                    <li><a class="nav-item" href="#easy-sharing" data-toggle="tab">Easy Sharing</a></li>
                 </ul>
                 </div>
                 <div class="tab-content pt-5" >
@@ -80,7 +81,7 @@
                                 <div class="col-12 col-md-4 col-md-pull-4 text-start features-text p-5 pe-0 justify-content-center text-center text-md-start">
                                     <h3 class="fw-bolder">Bookmark in one click</h3>
                                     <h5 class="text-black-50 my-4 lh-base me-5">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</h5>
-                                    <button class="btn btn-primary px-4 py-2 me-2 mt-2 shadow">More info</button>
+                                    <button class="btn btn-primary px-4 py-2 me-2 mt-2 shadow">More Info</button>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +96,7 @@
                                 <div class="col-12 col-md-4 col-md-pull-4 text-start features-text p-5 pe-0 justify-content-center text-center text-md-start">
                                     <h3 class="font-weight-bolder">Intelligent search</h3>
                                     <h5 class="text-black-50 mt-4">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</h5>
-                                    <button class="btn btn-primary px-4 py-2 me-2 mt-4 shadow">More info</button>
+                                    <button class="btn btn-primary px-4 py-2 me-2 mt-4 shadow">More Info</button>
                                 </div>
                             </div>
                         </div>
@@ -110,18 +111,17 @@
                                 <div class="col-12 col-md-4 col-md-pull-4 text-start features-text p-5 pe-0 justify-content-center text-center text-md-start">
                                     <h3 class="font-weight-bolder">Share your bookmarks</h3>
                                     <h5 class="text-black-50 mt-4">Easily share your bookmarks and collections with others. Create a shareable link taht you can send at the click of a button.</h5>
-                                    <button class="btn btn-primary px-4 py-2 me-2 mt-4 shadow">More info</button>
+                                    <button class="btn btn-primary px-4 py-2 me-2 mt-4 shadow">More Info</button>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-<!-- seccion cards  -->
+<!-- seccion download cards  -->
     <div class="container">
         <div class="row text-downloads">
             <div class="col-10 col-md-5 text-content my-5 mx-auto text-center">
@@ -136,7 +136,7 @@
                 <h5 class="card-title">Add to Chrome</h5>
                 <p class="card-text text-black-50 my-3 ">Minimum version 62</p>
                 <img src="/img/bg-dots.svg" class="w-100 m-0 linea-punteada" alt="linea divisora">
-                <a href="#" class="btn btn-primary my-3 py-3 mx-auto shadow">Add & Install Extension</a>
+                <a href="#" class="btn my-3 py-3 mx-auto shadow">Add & Install Extension</a>
                 </div>
             </div>
             <div class="card shadow text-center p-0 mx-3">
@@ -145,7 +145,7 @@
                 <h5 class="card-title">Add to Firefox</h5>
                 <p class="card-text text-black-50 my-3 ">Minimum version 55</p>
                 <img src="/img/bg-dots.svg" class="w-100 m-0 linea-punteada" alt="linea divisora">
-                <a href="#" class="btn btn-primary my-3 py-3 mx-auto shadow">Add & Install Extension</a>
+                <a href="#" class="btn my-3 py-3 mx-auto shadow">Add & Install Extension</a>
                 </div>
             </div>
             <div class="card shadow text-center p-0 mx-3">
@@ -154,7 +154,7 @@
                 <h5 class="card-title">Add to Opera</h5>
                 <p class="card-text text-black-50 my-3 ">Minimum version 46</p>
                 <img src="/img/bg-dots.svg" class="w-100 m-0 linea-punteada" alt="linea divisora">
-                <a href="#" class="btn btn-primary my-3 py-3 mx-auto shadow">Add & Install Extension</a>
+                <a href="#" class="btn  my-3 py-3 mx-auto shadow">Add & Install Extension</a>
                 </div>
             </div>
         </div>
@@ -169,78 +169,119 @@
                 <h5 class="text-black-50 my-3 lh-base">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</h5>
             </div>
         </div>
-            <div class="container mt-2">
-                <div class="row">
-                    <div class="col-md-6 justify-content-center offset-md-3">
-                        <div class="accordion accordion-flush" id="accordion-faq">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header d-1" id="pregunta-1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pregunta-1" aria-expanded="true" aria-controls="faq-pregunta-1">
-                                    What is Bookmark?
-                                    </button>
-                                </h2>
-                                <div id="faq-pregunta-1" class="accordion-collapse collapse"  aria-labelledby="pregunta-1" data-bs-parent="#accordion-faq">
-                                    <div class="accordion-body">
-                                        <p>Vis id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. Ad augue inani postulant mel, mel ea qualisque forensibus.
-                                        Lorem salutandi eu mea, eam in soleat iriure assentior. Tamquam lobortis id qui. Ea sanctus democritum mei, per eu alterum electram adversarium. Ea vix probo dicta iuvaret, posse epicurei suavitate eam an, nam et vidit menandri. Ut his accusata petentium.
-                                        </p>
-                                    </div>
+        <div class="row container mt-2">
+            <div class="row">
+                <div class="col-md-6 justify-content-center offset-md-3">
+                    <div class="accordion accordion-flush" id="accordion-faq">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="pregunta-1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pregunta-1" aria-expanded="true" aria-controls="faq-pregunta-1">
+                                What is Bookmark?
+                                </button>
+                            </h2>
+                            <div id="faq-pregunta-1" class="accordion-collapse collapse"  aria-labelledby="pregunta-1" data-bs-parent="#accordion-faq">
+                                <div class="accordion-body">
+                                    <p>Vis id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. Ad augue inani postulant mel, mel ea qualisque forensibus.
+                                    Lorem salutandi eu mea, eam in soleat iriure assentior. Tamquam lobortis id qui. Ea sanctus democritum mei, per eu alterum electram adversarium. Ea vix probo dicta iuvaret, posse epicurei suavitate eam an, nam et vidit menandri. Ut his accusata petentium.
+                                    </p>
                                 </div>
                             </div>
-        
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="pregunta-2">
-                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pregunta-2" aria-expanded="true" aria-controls="faq-pregunta-2">
-                                    How can I request a new browser?
-                                    </button>
-                                </h2>
-                                <div id="faq-pregunta-2" class="accordion-collapse collapse"  aria-labelledby="pregunta-2" data-bs-parent="#accordion-faq">
-                                    <div class="accordion-body">
-                                        <p>Vis id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. Ad augue inani postulant mel, mel ea qualisque forensibus.
-                                        Lorem salutandi eu mea, eam in soleat iriure assentior. Tamquam lobortis id qui. Ea sanctus democritum mei, per eu alterum electram adversarium. Ea vix probo dicta iuvaret, posse epicurei suavitate eam an, nam et vidit menandri. Ut his accusata petentium.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="pregunta-3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pregunta-3" aria-expanded="true" aria-controls="faq-pregunta-3">
-                                    Is there a mobile app?
-                                    </button>
-                                </h2>
-                                <div id="faq-pregunta-3" class="accordion-collapse collapse"  aria-labelledby="pregunta-3" data-bs-parent="#accordion-faq">
-                                    <div class="accordion-body">
-                                        <p>Vis id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. Ad augue inani postulant mel, mel ea qualisque forensibus.
-                                        Lorem salutandi eu mea, eam in soleat iriure assentior. Tamquam lobortis id qui. Ea sanctus democritum mei, per eu alterum electram adversarium. Ea vix probo dicta iuvaret, posse epicurei suavitate eam an, nam et vidit menandri. Ut his accusata petentium.
-                                        </p>  
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="pregunta-4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pregunta-4" aria-expanded="true" aria-controls="faq-pregunta-4">
-                                    What about other Chromium browsers?
-                                    </button>
-                                </h2>
-                                <div id="faq-pregunta-4" class="accordion-collapse collapse"  aria-labelledby="pregunta-4" data-bs-parent="#accordion-faq">
-                                    <div class="accordion-body">
-                                        <p>Vis id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. Ad augue inani postulant mel, mel ea qualisque forensibus.
-                                        Lorem salutandi eu mea, eam in soleat iriure assentior. Tamquam lobortis id qui. Ea sanctus democritum mei, per eu alterum electram adversarium. Ea vix probo dicta iuvaret, posse epicurei suavitate eam an, nam et vidit menandri. Ut his accusata petentium.
-                                        </p>    
-                                    </div>
-                                </div>
-                            </div>
-        
                         </div>
-
+    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="pregunta-2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pregunta-2" aria-expanded="true" aria-controls="faq-pregunta-2">
+                                How can I request a new browser?
+                                </button>
+                            </h2>
+                            <div id="faq-pregunta-2" class="accordion-collapse collapse"  aria-labelledby="pregunta-2" data-bs-parent="#accordion-faq">
+                                <div class="accordion-body">
+                                    <p>Vis id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. Ad augue inani postulant mel, mel ea qualisque forensibus.
+                                    Lorem salutandi eu mea, eam in soleat iriure assentior. Tamquam lobortis id qui. Ea sanctus democritum mei, per eu alterum electram adversarium. Ea vix probo dicta iuvaret, posse epicurei suavitate eam an, nam et vidit menandri. Ut his accusata petentium.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="pregunta-3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pregunta-3" aria-expanded="true" aria-controls="faq-pregunta-3">
+                                Is there a mobile app?
+                                </button>
+                            </h2>
+                            <div id="faq-pregunta-3" class="accordion-collapse collapse"  aria-labelledby="pregunta-3" data-bs-parent="#accordion-faq">
+                                <div class="accordion-body">
+                                    <p>Vis id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. Ad augue inani postulant mel, mel ea qualisque forensibus.
+                                    Lorem salutandi eu mea, eam in soleat iriure assentior. Tamquam lobortis id qui. Ea sanctus democritum mei, per eu alterum electram adversarium. Ea vix probo dicta iuvaret, posse epicurei suavitate eam an, nam et vidit menandri. Ut his accusata petentium.
+                                    </p>  
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="pregunta-4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pregunta-4" aria-expanded="true" aria-controls="faq-pregunta-4">
+                                What about other Chromium browsers?
+                                </button>
+                            </h2>
+                            <div id="faq-pregunta-4" class="accordion-collapse collapse"  aria-labelledby="pregunta-4" data-bs-parent="#accordion-faq">
+                                <div class="accordion-body">
+                                    <p>Vis id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. Ad augue inani postulant mel, mel ea qualisque forensibus.
+                                    Lorem salutandi eu mea, eam in soleat iriure assentior. Tamquam lobortis id qui. Ea sanctus democritum mei, per eu alterum electram adversarium. Ea vix probo dicta iuvaret, posse epicurei suavitate eam an, nam et vidit menandri. Ut his accusata petentium.
+                                    </p>    
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row m-auto justify-content-center my-5"><button class="btn more-info btn-primary px-4 py-2 shadow m-auto">More Info</button></div>
+
+            
+    </div>
+<!-- footer -->
+
+<footer class="container-fluid footer">
+    <div class="row contacto bg-primary my-5 justify-content-center text-center">
+        <p class="text-white text-center my-5">35.000+ ALREADY JOIN</p>
+        <div class="col-10 col-md-5"><h1 class="text-white fw-bolder">Stay up-to date with what we're doing</h1></div>
+        <form class="formulario-contacto needs-validation row flex-md-column justify-content-center mx-auto my-5"  novalidate>
+                <div class="form-mail col-12 col-md-2 my-2 justify-content-end w-100 w-md-50">
+                    <input class="form-control" type="email" placeholder="Enter your email address" required>
+                    <div class="invalid-feedback m-0 p-1 rounded font-italic ">Whoops, make sure it's an email</div>
+                </div>
+                <div class="submit-contact-btn col-12 col-md-2 my-2 justify-content-start">
+                    <button type="submit" class="btn px-4 py-2 w-100 ">Contact us</button>
+                </div>
+        </form>
+        </div>
+
     </div>
 
+</footer>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
 
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
     
 
 

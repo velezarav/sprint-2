@@ -18,6 +18,57 @@ body {
     letter-spacing: 2px;
 }
 
+.navbar-brand > img {
+  width: 11rem;
+}
+
+.navbar-toggler {
+  img {
+    width: 1.5rem;
+  }
+}
+
+.navbar-link {
+  color: gray;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.login {
+  background-color: $secondary;
+  color: white;
+
+  &:hover {
+    background-color: white;
+    border: solid $secondary 1px;
+    color: $secondary;
+  }
+}
+
+.btn-chrome {
+  background-color: $primary;
+  color: white;
+  &:hover {
+    background-color: white;
+    color: $primary;
+    border: solid 1px $primary;
+  }
+}
+
+
+
+.btn-firefox {
+  background-color: $light;
+  color: $gray-600;
+  &:hover {
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+  }
+}
+
+
 .image-bloque {
   width: 90%;
 }
@@ -80,6 +131,10 @@ body {
     text-decoration: none;
     color: gray;
     font-size: 1.3rem;
+    &:hover {
+      color: $secondary;
+    }
+
   }
   .active {
     border-bottom: 0.2em solid #FA5959; 
@@ -113,6 +168,13 @@ body {
 
     a {
       width: 80%;
+      color: white;
+      background-color: $primary;
+      &:hover {
+        color: $primary;
+        background-color: white;
+        border: solid 1px $primary;
+      }
     }
   }
 
@@ -135,9 +197,25 @@ body {
   }
 }
 
+.accordion-button {
+  font-size: 1.25rem;
+}
+
+.accordion-body > p {
+  font-size: 1rem;
+}
+
 .accordion-button:not(.collapsed) {
   color: black;
   background-color: white;
+}
+
+.accordion-button.collapsed::after {
+  color: $primary;
+}
+
+.accordion-button:not(.collapsed)::after {
+  color:$secondary;
 }
 
 .accordion-button:focus {
@@ -148,6 +226,41 @@ body {
   color: $secondary;
 }
 
-.accordion-button {
-  font-weight: bold;
+.more-info {
+  width: 10rem;
+}
+
+.contacto {
+  p {
+    letter-spacing: 0.75rem;
+  }
+
+  .btn {
+    color: white;
+    background-color: $secondary;
+    &:hover {
+      color: $secondary;
+      background-color: white;
+      border: solid 1px $secondary;
+    }
+  }
+
+  // .form-control {
+  //   display: inline-block;
+  //   position: relative;
+  // }
+}
+
+.invalid-feedback {
+  background-color:$secondary;
+  color: white;
+}
+
+footer {
+  margin-top: 8rem;
+}
+
+.formulario-contacto {
+  display: inline-block;
+  position: relative;
 }
