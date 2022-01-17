@@ -79,11 +79,11 @@ body {
 
 
 .bloque-derecha {
-    height: 20em;
+    height: 65%;
     width: 80%;
-    border-radius: 17em 0 0 17em;
-    margin-top: -18em;
-    margin-left: 10em;
+    border-radius: 17rem 0 0 17rem;
+    margin-top: -23rem;
+    margin-left: 10rem;
     margin-right: 0;
     float: right;
     position: relative;
@@ -91,10 +91,10 @@ body {
   }
 
 .bloque-izquierda {
-  height: 22em;
+  height: 25rem;
   width: 75%;
-  border-radius: 0 17em 17em 0;
-  margin-top: -14em;
+  border-radius: 0 17rem 17rem 0;
+  margin-top: -20rem;
   margin-left: 0;
   float: left;
   position: relative;
@@ -124,14 +124,16 @@ body {
 }
 
 .nav-tabs {
+  padding-right: 0;
+
   li {
     padding: 1em 2.5em;
     border-bottom:  0.1em solid rgb(155, 155, 155); 
   }
 
   a {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     text-decoration: none;
     color: gray;
     font-size: 1.3rem;
@@ -295,3 +297,36 @@ footer {
     }
   }
 }
+
+.row {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .bloque-derecha {
+    height: 33%;
+    margin-top: -12rem;
+  }
+
+  .bloque-izquierda {
+    height: 29%;
+    margin-top: -9rem;
+  }
+} 
+
+@media only screen and (max-width: 576px) {
+  .content-tab-features > .nav-tabs > li:first-child {
+    border-top:  0.1em solid rgb(155, 155, 155); 
+  }
+
+  .bloque-derecha {
+    height: 85%;
+    margin-top: -12rem;
+  }
+
+  .bloque-izquierda {
+    height: 85%;
+    width: 75%;
+    margin-top: -9rem;
+  }
+} 
