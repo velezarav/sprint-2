@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -690,7 +695,7 @@ progress {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-.5 * var(--bs-gutter-x));
+  /* margin-right: calc(-.5 * var(--bs-gutter-x)); */
   margin-left: calc(-.5 * var(--bs-gutter-x));
 }
 
@@ -12144,11 +12149,14 @@ body {
 }
 
 .accordion-button.collapsed::after {
+  background-image: url(/img/icon-arrow.svg);
   color: #5265E1;
 }
 
 .accordion-button:not(.collapsed)::after {
-  color: #FA5959;
+  background-image: url(/img/icon-arrow.svg);
+  -webkit-filter: invert(56%) sepia(15%) saturate(7470%) hue-rotate(323deg) brightness(95%) contrast(107%);
+          filter: invert(56%) sepia(15%) saturate(7470%) hue-rotate(323deg) brightness(95%) contrast(107%);
 }
 
 .accordion-button:focus {
@@ -12192,4 +12200,36 @@ footer {
   display: inline-block;
   position: relative;
 }
+
+.footer {
+  background-color: #282c44;
+  font-size: 1rem;
+}
+
+.footer .navbar-brand {
+  width: 10em;
+}
+
+.footer .navbar-social > a {
+  padding: 0.5rem;
+}
+
+.footer .navbar-social > a:hover {
+  -webkit-filter: invert(56%) sepia(15%) saturate(7470%) hue-rotate(323deg) brightness(95%) contrast(107%);
+          filter: invert(56%) sepia(15%) saturate(7470%) hue-rotate(323deg) brightness(95%) contrast(107%);
+}
+
+.footer .nabvar-footer a {
+  color: white;
+}
+
+.footer .nabvar-footer a:hover {
+  color: #FA5959;
+}
 /*# sourceMappingURL=estilos.css.map */
+
+@media only screen and (max-width: 768px) {
+  .content-tab-features > .nav-tabs > li:first-child{
+    border-top:  0.1em solid rgb(155, 155, 155); 
+  }
+}

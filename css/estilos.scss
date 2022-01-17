@@ -6,6 +6,10 @@ $accordion-button-active-color: $secondary;
 $accordion-icon-width: 1.75rem;
 
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
 
 // ------------------------------------
@@ -211,11 +215,13 @@ body {
 }
 
 .accordion-button.collapsed::after {
+  background-image: url(/img/icon-arrow.svg);
   color: $primary;
 }
 
 .accordion-button:not(.collapsed)::after {
-  color:$secondary;
+  background-image: url(/img/icon-arrow.svg);
+  filter: invert(56%) sepia(15%) saturate(7470%) hue-rotate(323deg) brightness(95%) contrast(107%);
 }
 
 .accordion-button:focus {
@@ -263,4 +269,29 @@ footer {
 .formulario-contacto {
   display: inline-block;
   position: relative;
+}
+
+.footer {
+  .navbar-brand {
+    width: 10em;
+  }
+
+  background-color: #282c44;
+  font-size: 1rem;
+
+  .navbar-social > a {
+    padding: 0.5rem;
+    &:hover {
+      filter: invert(56%) sepia(15%) saturate(7470%) hue-rotate(323deg) brightness(95%) contrast(107%);
+    }
+  }
+
+  .nabvar-footer {
+    a {
+        color: white;
+        &:hover {
+          color: $secondary;
+        }
+    }
+  }
 }
